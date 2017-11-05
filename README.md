@@ -7,7 +7,7 @@ Steps to setup environment in new machine
 
 1. git clone git@github.com:perezbecker/dotfiles.git in home directory  
 2. Run makesymlinks.sh command
-3. Check files dotfiles_old directory to see if previous dotfiles existed and copy useful information into this repo.
+3. Check files dotfiles_old directory to see if previous dotfiles existed and copy useful information into this repo. Delete dotfiles_old when done.
 4. install Tmux
 5. Remap Capslock to Control + Escape
    On Linux use xcape and follow these instructions: 
