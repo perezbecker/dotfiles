@@ -20,3 +20,10 @@ Steps to setup environment in new machine
 7. Clone Vundle.vim (Vim bundle manager) into directory ~/dotfiles/vim/bundle by running "git clone https://github.com/VundleVim/Vundle.vim.git" 
 8. Install all plugins handled by Vundle by running :PluginInstall inside a vim session.
 9. Softlink vid command to ~/bin/
+
+Intersting Websites
+-------------------
+
+http://jilles.me/badassify-your-terminal-and-shell/
+https://github.com/christoomey/dotfiles
+
