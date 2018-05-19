@@ -13,7 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/repmo.vim'
+Plugin 'vim-scripts/repmo.vim' "Repeat motion commands (10j) with ;
+Plugin 'terryma/vim-smooth-scroll' "Smooth Scrolling when clicking Ctrl-d
+Plugin 'tpope/vim-surround' "Delete, change, add parenthesis, brackets, quotes, XML tags in pair
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -83,3 +85,9 @@ set splitbelow
 autocmd VimEnter * if !argc() | NERDTree | endif
 autocmd BufEnter * if !argc() | NERDTreeMirror | endif
 
+
+" Smooth-Scroll key remapings
+noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 0, 1)<CR>
+noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 0, 1)<CR>
+noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 2)<CR>
+noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 2)<CR>
