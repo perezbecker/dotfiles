@@ -70,7 +70,8 @@ set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 "set nowrap                " don't wrap text
-
+set listchars=tab:>~,nbsp:_,trail:. "show tabs and trailing whitespaces
+set list                            "show tabs and trailing whitespaces
 
 " Screen Split
 " Remap keys
