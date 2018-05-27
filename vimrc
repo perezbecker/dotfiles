@@ -92,3 +92,8 @@ noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 0, 1)<CR>
 noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 0, 1)<CR>
 noremap <silent> <C-B> :call smooth_scroll#up(&scroll*2, 0, 2)<CR>
 noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 2)<CR>
+
+" Spellcheckers
+map <F5> :setlocal spell! spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=es_mx<CR>
+map <F7> :setlocal spell! spelllang=de_de<CR>
