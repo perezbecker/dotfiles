@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="vimrc vim tmux.conf"                 # list of files/folders to symlink in homedir
+files="vimrc vim tmux.conf Xmodmap"                 # list of files/folders to symlink in homedir
 
 ##########
 
@@ -29,6 +29,14 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# move existing i3 config file in ~/.config/i3/ to dotfiles_old directory, then create symlinks to i3config in the dotfiles directory
+mv ~/.config/i3/config ~/dotfiles_old/i3config
+echo "Creating symlink for i3 config file."
+ln -s $dir/i3config ~/.config/i3/config
+
+
+
 
 #install_zsh () {
 ## Test to see if zshell is installed.  If it is:
