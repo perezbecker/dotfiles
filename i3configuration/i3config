@@ -195,7 +195,7 @@ bindsym $mod+Shift+x exec i3lock --color=000000
 bindsym $mod+i exec firefox
 bindsym $mod+p exec keepassx
 bindsym $mod+m exec spotify
-bindsym $mod+f exec nautilus
+bindsym $mod+n exec nautilus
 
 # start rofi
 #bindsym $mod+space exec rofi -show run -lines 3 -eh 2 -width 100 -padding 900 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
