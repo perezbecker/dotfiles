@@ -35,4 +35,4 @@ i3 Configuration steps
 3. Install compton: sudo apt install compton
 4. Install xcape: sudo apt install xcape
 5. Install i3blocks: sudo apt install i3blocks
-6. Choose/Create i3blocks.conf by copying ~/dotfiles/i3confguration/i3blocks.conf-laptop/-desktop
+6. Create simbolic link for i3blocks.conf from ~/dotfiles/i3confguration/i3blocks.conf-laptop/-desktop: ln -s i3blocks.conf-desktop i3blocks.conf
