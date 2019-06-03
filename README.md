@@ -27,3 +27,12 @@ Intersting Websites
 http://jilles.me/badassify-your-terminal-and-shell/
 https://github.com/christoomey/dotfiles
 
+i3 Configuration steps
+----------------------
+
+1. Copy fonts in ~/.fonts directory
+2. Install rofi: sudo apt intall rofi
+3. Install compton: sudo apt install compton
+4. Install xcape: sudo apt install xcape
+5. Install i3blocks: sudo apt install i3blocks
+6. Choose/Create i3blocks.conf by copying ~/dotfiles/i3confguration/i3blocks.conf-laptop/-desktop
