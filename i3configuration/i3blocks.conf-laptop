@@ -67,10 +67,10 @@ interval=5
 #min_width=CPU: 100.00%
 separator=true
 
-[gpu-load]
-command=$SCRIPT_DIR/gpu-load
-label=
-interval=5
+#[gpu-load]
+#command=$SCRIPT_DIR/gpu-load
+#label=
+#interval=5
 #min_width=GPU 100% 100% 100% 100%
 #T_WARN=70
 #T_CRIT=90
@@ -81,7 +81,7 @@ interval=5
 [memory]
 label=
 separator=true
-interval=30
+interval=5
 
 #[memory]
 #label=SWAP
@@ -98,20 +98,20 @@ interval=30
 
 [disk]
 label=
-instance=/home
-interval=30
-separator=false
-
-[disk]
-label=
-instance=/mnt/d8
-interval=30
-separator=false
-
-[disk]
-label=
 instance=/
 interval=30
+#separator=false
+
+#[disk]
+#label=
+#instance=/mnt/d8
+#interval=30
+#separator=false
+
+#[disk]
+#label=
+#instance=/
+#interval=30
 
 # Network interface monitoring
 #
@@ -123,9 +123,10 @@ interval=30
 #interval=10
 #separator=false
 
-#[wifi]
-#instance=wlp3s0
-#interval=10
+[wifi]
+label=
+instance=wlp3s0
+interval=10
 #separator=false
 
 #[bandwidth]
@@ -135,11 +136,13 @@ interval=30
 # Battery indicator
 #
 # The battery instance defaults to 0.
-#[battery]
+[battery]
 #label=BAT
+command=acpi | awk '{print substr($4,1,length($4)-1)}'
+label=
 #label=⚡
-#instance=1
-#interval=30
+instance=1
+interval=5
 
 # Date Time
 #
