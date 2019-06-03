@@ -193,7 +193,7 @@ bar {
 
 bindsym $mod+Shift+x exec i3lock --color=000000
 bindsym $mod+i exec firefox
-bindsym $mod+p exec keepassx
+bindsym $mod+p exec keepassxc
 bindsym $mod+m exec spotify
 bindsym $mod+n exec nautilus
 
