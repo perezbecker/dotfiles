@@ -33,7 +33,7 @@ done
 # move existing i3 config file in ~/.config/i3/ to dotfiles_old directory, then create symlinks to i3config in the dotfiles directory
 mv ~/.config/i3/config ~/dotfiles_old/i3config
 echo "Creating symlink for i3 config file."
-ln -s $dir/i3config ~/.config/i3/config
+ln -s $dir/i3configuration/i3config ~/.config/i3/config
 
 
 
