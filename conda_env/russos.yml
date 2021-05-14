@@ -1,0 +1,9 @@
+name: russos
+channels:
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - selenium

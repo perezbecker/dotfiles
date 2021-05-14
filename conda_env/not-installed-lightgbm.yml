@@ -1,0 +1,12 @@
+name: lightgbm
+channels:
+    - defaults
+dependencies:
+    - python=3.8
+    - pip
+    - pip:
+        - azureml-sdk
+        - lightgbm
+        - ipython
+        - pandas
+        - sklearn
