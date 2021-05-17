@@ -3,7 +3,7 @@
 echo "Removing existing Conda environments..."
 
 # make sure you are in base environment
-source ~/anaconda3/etc/profile.d/conda.sh
+source ~/code/other/anaconda3/etc/profile.d/conda.sh
 conda activate base
 
 # loop through output of "conda env list"
@@ -31,7 +31,7 @@ do
     # skip setup-environment.sh file
     [[ $file = *.sh ]] && continue
 
-    # skip setup-environment.sh files
+    # skip "not-installed" files
     [[ $file = not-installed-* ]] && continue
 
     echo "Creating Conda environment from $file"
