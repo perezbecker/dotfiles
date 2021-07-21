@@ -31,10 +31,10 @@ Intersting Websites
 i3 Configuration steps
 ----------------------
 
-1. Copy fonts in ~/.fonts directory
-2. Install rofi: sudo apt intall rofi
-3. Install compton: sudo apt install compton
-4. Install xcape: sudo apt install xcape
-5. Install i3blocks: sudo apt install i3blocks
-6. Create simbolic link for i3blocks.conf from ~/dotfiles/i3confguration/i3blocks.conf-laptop/-desktop: ln -s i3blocks.conf-desktop i3blocks.conf
-7. Create simbolic link for dpbrofi from ~/dotfiles/i3confguration/dpbrofi-laptop/-desktop: ln -s dpbrofi-desktop dpbrofi
+1. Copy fonts in `~/.fonts` directory
+2. Install rofi: `sudo apt intall rofi`
+3. Install compton: `sudo apt install compton`
+4. Install xcape: `sudo apt install xcape`
+5. Install i3blocks: `sudo apt install i3blocks`
+6. Create simbolic link for i3blocks.conf from ~/dotfiles/i3confguration/i3blocks.conf-laptop/-desktop: `ln -s i3blocks.conf-desktop i3blocks.conf`
+7. Create simbolic link for dpbrofi from ~/dotfiles/i3confguration/dpbrofi-laptop/-desktop: `ln -s dpbrofi-desktop dpbrofi`
