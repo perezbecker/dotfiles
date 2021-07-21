@@ -17,6 +17,20 @@ Plugin 'vim-scripts/repmo.vim' "Repeat motion commands (10j) with ;
 Plugin 'terryma/vim-smooth-scroll' "Smooth Scrolling when clicking Ctrl-d
 Plugin 'tpope/vim-surround' "Delete, change, add parenthesis, brackets, quotes, XML tags in pair
 
+" .............................................................................
+"Plugins for vim Markdown Support
+" .............................................................................
+
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'iamcco/markdown-preview.nvim'
+"Make sure to run the following commands in vim to make the plugin work
+":source %
+":PluginInstall
+":call mkdp#util#install()
+
+
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -97,3 +111,22 @@ noremap <silent> <C-F> :call smooth_scroll#down(&scroll*2, 0, 2)<CR>
 map <F5> :setlocal spell! spelllang=en_us<CR>
 map <F6> :setlocal spell! spelllang=es_mx<CR>
 map <F7> :setlocal spell! spelllang=de_de<CR>
+
+
+" .............................................................................
+" plasticboy/vim-markdown
+" .............................................................................
+
+autocmd FileType markdown let b:sleuth_automatic=0
+autocmd FileType markdown set conceallevel=0
+autocmd FileType markdown normal zR
+
+let g:vim_markdown_frontmatter=1
+
+" .............................................................................
+" iamcco/markdown-preview.nvim
+" .............................................................................
+
+let g:mkdp_refresh_slow=0
+let g:mkdp_markdown_css='./other/github-markdown.css'
+
