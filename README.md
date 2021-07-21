@@ -5,7 +5,7 @@ Steps to setup environment in new machine
 -----------------------------------------
 
 
-1. git clone git@github.com:perezbecker/dotfiles.git in home directory
+1. Run `git clone git@github.com:perezbecker/dotfiles.git` in home directory of new machine
 1. Run `makesymlinks.sh` command
 1. Check files dotfiles_old directory to see if previous dotfiles existed and copy useful information into this repo. Delete dotfiles_old when done.
 1. install Tmux
@@ -19,7 +19,7 @@ Steps to setup environment in new machine
 1. Cretate directory `~/dotfiles/vim/bundle`
 1. Clone Vundle.vim (Vim bundle manager) into directory `~/dotfiles/vim/bundle` by running `git clone https://github.com/VundleVim/Vundle.vim.git`
 1. Install all plugins handled by Vundle by running `:PluginInstall` inside a vim session
-1. The vim markdown plugin requires you to run `:call mkdp#util#install()` inside the vim session after PluginInstall. The `github-markdown.css` file is already included in the `other` directory. See this [youtube video](https://www.youtube.com/watch?v=22JAs0kNA9k) for details
+1. The vim markdown plugin requires you to run `:call mkdp#util#install()` inside the vim session after PluginInstall. The `github-markdown.css` file is already included in the `other` directory. Run `:MarkdownPreview` in vim to see a preview of the markdown file in a browser. See this [youtube video](https://www.youtube.com/watch?v=22JAs0kNA9k) for details
 1. Softlink vid command to ~/bin/
 
 Intersting Websites
