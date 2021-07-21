@@ -1,0 +1,14 @@
+name: tello
+channels:
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+    - djitellopy
+    - opencv-python
+    - ipython
+    - numpy
+    - pygame
+    - setuptools
