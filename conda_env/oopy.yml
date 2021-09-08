@@ -1,0 +1,9 @@
+name: oopy
+channels:
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.9.5
+  - pip
+  - pip:
+    - mypy==0.812

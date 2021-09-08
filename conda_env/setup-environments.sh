@@ -31,8 +31,8 @@ do
     # skip setup-environment.sh file
     [[ $file = *.sh ]] && continue
 
-    # skip "not-installed" files
-    [[ $file = not-installed-* ]] && continue
+    # skip "not-installed" files/direcotry
+    [[ $file = not-installed* ]] && continue
 
     echo "Creating Conda environment from $file"
     conda env create -f $file
