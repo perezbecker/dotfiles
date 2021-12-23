@@ -1,0 +1,17 @@
+name: aryan
+channels:
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.9.6
+  - pip
+  - pip:
+    - torch
+    - numpy
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - tensorboard
+    - mlflow
+    - tqdm
+    - pillow
